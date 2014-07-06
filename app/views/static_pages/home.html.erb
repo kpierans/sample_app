@@ -1,11 +1,36 @@
-<% provide(:title, 'Sample App') %>
-<div class="center hero-unit">
-  <h1>Welcome to the Sample App</h1>
-  <h2>
-    This is the <%= yield(:title) %> page for the
-    <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
-    sample application.
-  </h2>
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+<% provide(:title, 'Poofer') %>
+<div class="jumbotron">
+  <h1>Poofer</h1>
+  <h2>POszukuję. OFERuję. </h2>
+  <h3>Idealne połączenie fachowców i potrzebujących.</h3>
 </div>
-<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 well" name="Poszukuje">
+      <h2>Poszukuję</h2>
+      <p>Potrzebujesz pomocy? Potrzebujesz fachowca?</p>
+      <p>Znajdź oferentów</p>
+
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Szukaj fachowca">
+        <span class="input-group-btn">
+        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+          <button class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span>Daj ogłoszenie</button>
+      </span>
+      </div><!-- /input-group -->
+    </div>
+    <div class="col-md-6 well" name="Oferuje">
+      <h2>Oferuję</h2>
+      <p>Świadczysz usługi? Chciałbyś dorobić?</p>
+      <p>Znajdź potrzebujących</p>
+
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Szukaj potrzebujących">
+        <span class="input-group-btn">
+        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+          <button class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span>Daj ogłoszenie</button>
+      </span>
+      </div><!-- /input-group -->
+    </div>
+  </div>
+</div>

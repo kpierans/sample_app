@@ -1,10 +1,17 @@
 <% provide(:title, @user.name) %>
 <div class="row">
-  <aside class="span4">
+  <aside class="col-md-4">
     <section>
       <h1><%= gravatar_for @user %></h1>
       <h1><%= @user.name %></h1>
       <h1><%= @user.email %></h1>
+      <h1><%= @user.telefon %></h1>
+      <h1><%= @user.ulica %></h1>
+      <h1><%= @user.numer_domu %></h1>
+      <h1><%= @user.numer_mieszkania %></h1>
+      <h1><%= @user.kod_pocztowy %></h1>
+      <h1><%= @user.miasto %></h1>
+
     </section>
   </aside>
 </div>
